@@ -1,52 +1,465 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Global Culture in 140 Characters or Less</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/">About</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, my name is Jace Robinson and this is my project for CS 3250, Computational Tools for Data Analysis.
-        		Stay tuned for an exciting investigation into Twitter!</h1>
-				<p>Global Culture in 140 Characters or Less <br>
-By Jace Robinson <br> </p>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Politicians and Super Tuesday in 140 Characters or Less</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Beginning</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#data">Data</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hyp1">1st Hypothesis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hyp2">2nd Hypothesis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hyp3">3rd Hypothesis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#conclusion">Conclusion</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#technologies">Technologies</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome!</div>
+                <div class="intro-heading">Ready for some Data Science?</div>
+                <a href="#overview" class="page-scroll btn btn-xl">Yes!</a>
+            </div>
+        </div>
+    </header>
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Overview</h2>
+                    <h3 class="section-subheading text-muted">Politicians and Super Tuesday in 140 Characters or Less</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6 text-center">
+                    Super Tuesday is when the greatest number of U.S. states holds primary elections. Super Tuesday this year was on March 1st. This important day determines the early frontrunners and generally causes the biggest losers from each political party to drop out of the race. This year the Republican primaries have received extra attention due to the ‘vocal’ candidate Donald Trump. Social media has been a hugely popular tool to communicate political ideas to others for many years. Twitter is a particularly popular social media source due to its convenience and simplicity. An interesting question I will examine in this report is how much meaningful information is actually available on Twitter? Specifically, what can Twitter tell us about Super Tuesday candidates, voters, and winners? Can we generate some characteristics of a candidate and their voters on solely on Twitter without needing outside knowledge? Through analysis of large data samples available on Twitter, I seek to summarize the current political landscape.
+                <br />
+                    <br />
+                    TODO: Fix images on right to be 2x3 grid
+                 </div>
+                <div class="col-lg-6 text-center">
+                    <div class="row-lg-12">
+                        <div class="row-md-6">
+                            <div class="col-lg-4 text-center">
+                                Donald Trump
+                                <img src="img/candidates/trump.jpg" class="img-responsive" alt="trump">
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                Marco Rubio
+                                <img src="img/candidates/rubio.jpg" class="img-responsive" alt="rubio">
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                Ted Cruz
+                                <img src="img/candidates/cruz.jpg" class="img-responsive" alt="cruz">
+                            </div>
+                        </div>
+                        <div class="row-md-6">
+                            <div class="col-lg-4 text-center">
+                                John Kasich
+                                <img src="img/candidates/kasich.jpg" class="img-responsive" alt="kasich">
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                Hilary Clinton
+                                <img src="img/candidates/clinton.jpg" class="img-responsive" alt="clinton">
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                Bernie Sanders
+                                <img src="img/candidates/sanders.jpg" class="img-responsive" alt="sanders">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Data Section -->
+    <section id="data" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Data</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6 text-center">
+                    Twitter functions through user tweets, retweets, follows, and hashtags. A tweet is a 140 characters or less message, an image, or a short video uploaded by a user. A retweet is when one user forwards another user’s tweet to all his or her followers. When a user follows another user, he or she is able to see all tweets and retweets of that user. Through the use of hashtags, the symbol ‘#’ and a message, users are able to connect through specific user defined moments. Through these four primary functions, Twitter has grown to have 320 million active users per month. This social network has become one of the central sources for mass information on global events. Famous actors, presidential candidates, local celebrities and your average Joe are all connected on Twitter.
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="img/twitter.png" class="img-responsive" alt="twitter">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hyp1 Section -->
+    <section id="hyp1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">1st Hypothesis</h2>
+                    <h3 class="section-subheading text-muted">I hypothesize Twitter metrics such as number of retweets, number of followers, and daily activity of a candidate will positively correlate with success of a candidate.</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Intro Text
+                </div>
+            </div>
+            <div class="row ">
+                <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 743px;margin: auto;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='743' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Book1_10018&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Conclusion Text
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hpy2 Section -->
+    <section id="hyp2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2nd Hypothesis</h2>
+                    <h3 class="section-subheading text-muted">Another hypothesis is the separate Twitter followings of each candidate will display differing characteristics that can be used to identify them. </h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Intro Text
+                </div>
+            </div>
+            <div class="row ">
+                <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 743px;margin: auto;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='743' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Book1_10018&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Conclusion Text
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hyp3 Section -->
+    <section id="hyp3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">3rd Hypothesis</h2>
+                    <h3 class="section-subheading text-muted">I hypothesize followers of the non-Trump candidates follow all candidates and many political news Twitter accounts, while followers of Trump only follow Trump and no others.</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Intro Text
+                </div>
+            </div>
+            <div class="row ">
+                <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 743px;margin: auto;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='743' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Book1_10018&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    Conclusion Text
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Overview Section -->
+    <section id="conclusion">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Conclusion</h2>
+                    <h3 class="section-subheading text-muted">Something worked or didnt work</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technologies Section -->
+    <section id="technologies" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technologies</h2>
+                    <h3 class="section-subheading text-muted">StartBoostrap and Tableau Public</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                StartBootstrap here http://startbootstrap.com/template-categories/full-websites/
+                <br />
+                <br />
+                StartBootstap provides complete templates to begin webdevelopment. The template used for this website is found here http://startbootstrap.com/template-overviews/agency/. I chose this template for the clean one-long page format with easy navigation bar along the top of the page. There are many more great, free to use templates available from this resource.
+                <br />
+                <br />
+                Tableau Public here https://public.tableau.com/s/
+                <br />
+                <br />
+                Tableau allows for very easy embedding of graphs into a webpage. The original graph is hosted by Tableau.com and linked. The graph is created using intuitive GUIs in a dashboard. I highly recommend Tableau for all quick and comprehensive data analysis tasks.
+            </div>
+        </div>
+    </section>
 
-<p>
-Twitter is an online social networking service that allows users to send and read short messages. Users are able to communicate primarily through tweets, retweets, follows, and hashtags. A tweet is a 140 characters or less message, an image, or a short video uploaded by a user. A retweet is when one user forwards another user’s tweet to all his or her followers. When a user follows another user, he or she is able to see all tweets and retweets of that user. Through the use of hashtags, the symbol ‘#’ and a message, users are able to connect through specific user defined moments. Through these four primary functions, Twitter has grown to have 320 million active users per month [1]. If enough users hashtag the same topic, it becomes a trending topic for all to see on the front page of Twitter. This social network has become one of the Internet gateways to global culture. Famous actors, presidential candidates, local celebrities and your average Joe are all connected on Twitter. 
-</p>
-
-<p>
-Data for this project will come from three sources. The first is the Twitter REST API. This API’s primary role is to collect more-filtered, old data. The second source is the Twitter Streaming API to collect less-filtered live data. There are API rate limits which determine the amount of information minable. By writing short scripts in Python, I will be able to use these API’s to collect rich data. This data will provide access to attributes such as location of user, location of tweet, time posted, relationships between users, and the content of user’s interests. The third source is a large network database already collected by Stanford’s SNAP! project showing the enormous social circles within Twitter [2]. Each of the three data sources will be used to answer different questions. 
-</p>
-
-<p>
-In this project I will present various ‘compare and contrast’ stories from the collected data. These comparisons will seek to give insight into the patterns of common characteristics between different user bases. For example I want to compare samples of followers’ between Hilary Clinton and Donald Trump accounts. Questions about the followers such as home location twitter usage, tweeting topics, and other following accounts may produce striking trends. Following standard political lines, I would hypothesize Trump followers to follow conservative related accounts while Clinton followers to follow more liberal accounts. Similar comparisons can be made for rival sports figures, rival eSports figures, and differing comedy accounts. Additional trends may be found when comparing small niche groups such as a popular local music groups against larger mainstream figures. In the small groups, I would expect each individual user to tweet more often on average while the larger group would have primarily passive followers. Through the examination of the Stanford Network data set, big picture connections between various social groups can be established. I will study two extremely unrelated groups and find a short topic-to-topic path to connect the two. I would expect the distance between the groups to be surprisingly small. Thanks to the vast popularity of Twitter, finding the answers for these questions will lead to an educational adventure in global culture.
-</p>
-
-<p>
-References <br>
-[1] Twitter, [Online] https://about.twitter.com/company <br>
-[2] Stanford Network Analysis Project, [Online] https://snap.stanford.edu/data/ <br>
-</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:jaceman21@gmail.com">email</a></li>
-        		<li><a href="https://jacerobinson8.github.io">jacerobinson8.github.io</a></li>
-			</ul>
-		</footer>
-		
-		<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 654px; height: 743px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='654' height='743' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='Book1_10018&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_10018&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
-		
-		<iframe src="http://glimmer.rstudio.com/rstudio/faithful/" style="border: none; width: 440px; height: 500px"></iframe>
-	</body>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Jace Robinson</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                Jace Robinson is awesome and does math.
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>Wright State University</li>
+                        <li>CS 3250 Computational Tools and Methods for Analysis</li>
+                        <li>Spring 2016</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.
+                            </p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014</li>
+                                <li>Client: Round Icons</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Heading</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+</body>
 </html>
