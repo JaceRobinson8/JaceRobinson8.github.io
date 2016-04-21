@@ -92,42 +92,42 @@
             </div>
             <div class="row text-center">
                 <div class="col-lg-6">
-                    <br/>
+                    <br />
                     <br />
                     <br />
                     <br />
                     <p align="justify">
-                        Super Tuesday is when the greatest number of U.S. states holds primary elections. Super Tuesday this year was on March 1st. This important day determines the early frontrunners and generally causes the biggest losers from each political party to drop out of the race. This year the Republican primaries have received extra attention due to the ‘vocal’ candidate Donald Trump. Social media has been a hugely popular tool to communicate political ideas to others for many years. Twitter is a particularly popular social media source due to its convenience and simplicity. <b>An interesting question I will examine in this report is how much meaningful information is actually available on Twitter? Specifically, what can Twitter tell us about Super Tuesday candidates, voters, and winners? Can we generate some characteristics of a candidate and their voters on solely on Twitter without needing outside knowledge? </b> Through analysis of large data samples available on Twitter, I seek to summarize the current political landscape.
-                    <br />
-                    <br />
-                        Note the graphs to be displayed are interactive! The visuals use a "storyboard" stucture that allows you to navigate through snapshots of the data. At the end of each story, you are encouraged to explore the dataset yourset!
+                        Super Tuesday is when the greatest number of U.S. states holds primary elections. Super Tuesday this year was on March 1st. This important day determines the early frontrunners and generally causes the biggest losers from each political party to drop out of the race. This year the Republican primaries have received extra attention due to the ‘vocal’ candidate Donald Trump. Social media has been a hugely popular tool to communicate political ideas to others for many years. Twitter is a particularly popular social media source due to its convenience and simplicity. <b>An interesting question I will examine in this report is how much meaningful information is actually available on Twitter? Specifically, what can Twitter tell us about Super Tuesday candidates, voters, and winners? Can we generate some characteristics of a candidate and their voters solely from Twitter without needing outside knowledge? </b> Through analysis of large data samples available on Twitter, I seek to summarize the current political landscape.
+                        <br />
+                        <br />
+                        Please note the graphs to be displayed are highly interactive! The visuals use a "storyboard" stucture that allow you to navigate through snapshots of the data. At the end of each story, you are encouraged to explore the dataset yourself!
                     </p>
                 </div>
                 <div class="col-lg-6 text-center">
-                        <div class="col-lg-6 text-center">
-                            Donald Trump
-                            <img src="img/candidates/trump2.jpg" class="img-responsive" alt="trump">
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            Marco Rubio
-                            <img src="img/candidates/rubio.jpg" class="img-responsive" alt="rubio">
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            Ted Cruz
-                            <img src="img/candidates/cruz.jpg" class="img-responsive" alt="cruz">
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            John Kasich
-                            <img src="img/candidates/kasich2.jpg" class="img-responsive" alt="kasich">
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            Hilary Clinton
-                            <img src="img/candidates/clinton.jpg" class="img-responsive" alt="clinton">
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            Bernie Sanders
-                            <img src="img/candidates/sanders.jpg" class="img-responsive" alt="sanders">
-                        </div>
+                    <div class="col-lg-6 text-center">
+                        Donald Trump
+                        <img src="img/candidates/trump2.jpg" class="img-responsive" alt="trump">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        Marco Rubio
+                        <img src="img/candidates/rubio.jpg" class="img-responsive" alt="rubio">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        Ted Cruz
+                        <img src="img/candidates/cruz.jpg" class="img-responsive" alt="cruz">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        John Kasich
+                        <img src="img/candidates/kasich2.jpg" class="img-responsive" alt="kasich">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        Hilary Clinton
+                        <img src="img/candidates/clinton.jpg" class="img-responsive" alt="clinton">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        Bernie Sanders
+                        <img src="img/candidates/sanders.jpg" class="img-responsive" alt="sanders">
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,20 +138,23 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">The Data Source</h2>
-                    <br/>
+                    <br />
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-lg-6 text-center">
                     <p align="justify">
-                        Twitter functions through user tweets, retweets, follows, and hashtags. A tweet is a 140 characters or less message, an image, or a short video uploaded by a user. A retweet is when one user forwards another user’s tweet to all his or her followers. When a user follows another user, he or she is able to see all tweets and retweets of that user. Through the use of hashtags, the symbol ‘#’ and a message, users are able to connect through specific user defined moments. Through these four primary functions, Twitter has grown to have 320 million active users per month. This social network has become one of the central sources for mass information on global events. Famous actors, presidential candidates, local celebrities and your average Joe are all connected on Twitter.
+                        Twitter functions through user tweets, retweets, follows, friends and hashtags. A tweet is a 140 characters or less message, an image, or a short video uploaded by a user. A retweet is when one user forwards another user’s tweet to all his or her followers. When a user follows another user, he or she is able to see all tweets and retweets of that user. Friends are established when user A followers user B and user B follower user A. Through the use of hashtags, the symbol ‘#’ and a message, users are able to connect through specific user defined moments. Through these five primary functions, Twitter has grown to have 320 million active users per month. This social network has become one of the central sources for mass information on global events. Famous actors, presidential candidates, local celebrities and your average Joe are all connected on Twitter.
+                        <br />
+                        <br />
+                        To collect data I wrote a python script to communicate with the Twitter API using the <a href="http://www.tweepy.org/">Tweepy</a> library. In total I collected over 12,000 user profiles and 28,000 tweets related to politics and politicians.
                     </p>
                 </div>
                 <div class="col-lg-1 text-center"></div>
-                    <div class="col-lg-5 text-center">
-                        <img src="img/twitter2.png" class="img-responsive" alt="twitter">
-                    </div>
+                <div class="col-lg-5 text-center">
+                    <img src="img/twitter2.png" class="img-responsive" alt="twitter">
                 </div>
+            </div>
         </div>
     </section>
     <!-- hyp1 Section -->
@@ -160,21 +163,21 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">1st Hypothesis</h2>
-                    <h3 class="section-subheading text-muted">I hypothesize the popularity of each candidate will positively correlate with number of delegates won.</h3>
+                    <h3 class="section-subheading">I hypothesize the popularity of each candidate will positively correlate with number of delegates won.</h3>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-lg-12 text-center">
                     <p align="justify">
-                        In this first hypothesis, I believe data taken from twitter will positively correlate with the number of delegates each candidate won on super tuesday. The first data we will examine is the average stats of the followings of each candidate. Trump has 7.66 million followers, Cruz has 1.06 million followers, Rubio has 1.34 million followers, Kasich has 298 thousand followers, Sanders has 1.99 million followers, and Clinton has 5.98 million followers. Of these followers, I took random subsets of users who retweeted the candidates on super tuesday. The subsets are about 800 users per candidate. I examined the average number follows, average number of favorites, and average number of friends of each candidate. These variables were then compared against the number of delegates. See the result of the analysis below in the first story. Remember the graphs are interactive for you to find your own conclusions!
+                        In this first hypothesis, I expect data taken from twitter will positively correlate with the number of delegates each candidate won on Super Tuesday. The first data we will examine is the average stats of the followings of each candidate. Trump has 7.66 million followers, Cruz has 1.06 million followers, Rubio has 1.34 million followers, Kasich has 298 thousand followers, Sanders has 1.99 million followers, and Clinton has 5.98 million followers. Of these followers, I took random subsets of users who retweeted the candidates on Super Tuesday. The subsets are about 800 users per candidate. I examined the average number follows, average number of favorites, and average number of friends of the following of each candidate. These variables were then compared against the number of delegates won on Super Tuesday. Remember the graphs are interactive for you to find your own conclusions!
                         </br>
                         </br>
-                        Along with examining the averages, I examined the retweets of each candidate throughout the day. Each candidate had about 10-20 tweets during Super Tuesday. Following the hypothesis, I would expect the winning candidates to be the most discussed. In the second plots below, we examine a heat map of each tweet hour by hour throughout the day.
+                        In a second analysis on the same hypothesis, I examined the retweets of each candidate throughout the day. Each candidate had about 10-20 tweets during Super Tuesday. I predict the most popular tweets of a candidate will related to winning specific states. I would also expect the winning candidates to gain popularity throughout the day if he or she is winning, and lose popularity if he or she is losing. In the second plots below, we examine a heat map of each tweet hour by hour throughout the day.
                     </p>
                 </div>
             </div>
-            <div class="row ">
-                <br/>
+            <div class="row">
+                <br />
                 <br />
                 <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;margin: auto'><noscript><a href='#'><img alt='General Stats ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hy&#47;hyp1FinalB&#47;Story2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='hyp1FinalB&#47;Story2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hy&#47;hyp1FinalB&#47;Story2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
                 <br />
@@ -183,25 +186,27 @@
             <div class="row ">
                 <div class="col-lg-12 text-center">
                     <p align="justify">
-                        During this analysis, the reader should click through the slides at the top of each graph. Looking at the first slide, 'Follower Stats', we see a table and a bar graph of the following stats and the number of delegates won for each candidate. From the start, we can immediately see that Clinton followers have the highest avgFollow count and avgFavourite count. The positively correlates with her success in the delegate count. We can also examine how Kasich and Rubio have lower numbers of each of the metrics that correlate with their lower delegate count. Lets now take a closer look at each party...
+                        During this analysis, the reader should click through the slides at the top of each graph as I reference it in text. Looking at the first slide, 'Follower Stats', a table and bar graphs of the following stats and the number of delegates won for each candidate is presented. From the start, we can immediately see that Clinton followers have the highest average follow count and average favorite count. This positively correlates with her success in the delegate count. We can also examine how Kasich and Rubio have lower numbers of each of the metrics which correlate with their lower delegate count.
                         </br>
                         </br>
-                        Looking at the second slide, 'Democrat Delegates', we can see the results hold with Clinton being have more active followers than Sanders, and in turn having the higher delegate counts. Lets see if the story holds for the republicans...
+                        Looking at the second slide, 'Democrat Delegates', the results hold with Clinton being have more active followers than Sanders, and in turn having the higher delegate counts. Lets see if the story holds for the republicans...
                         </br>
                         </br>
-                        Looking at the third slide, 'Republican Delegates', we can see the hypothesis does not hold. Cruz has more active followers than Trump, but Trump is the biggest winner in the delegate race. Lets now examine a different metric, the number of retweets for each of the tweets by candidates on super tuesday.
+                        Looking at the third slide, 'Republican Delegates', we can see the hypothesis does not hold. Cruz has more active followers than Trump, but Trump is the biggest winner in the delegate race. To seek a more solid conclusion, we would need more data on candidates and their followers than Twitter can provide.
                         </br>
                         </br>
                         Looking at the fourth slide, 'Retweets per Candidate', we can see a box and whisker plot. This plot shows that Trump and Sanders were most retweeted on Super Tuesday. This time the republican party followed the hypothesis while the democrats opposed it.
                         </br>
                         </br>
-                        Overall the first hypothesis was not successful so I would reject it. You are encouraged to explore the plots more and make your own arguments!
-                        </br>
-                        </br>
+                    <p class="text-danger" align="justify">
+                        Overall the first hypothesis was not consistently accurate so I would reject it. Despite some of the results positively correlating with the winning candidates, this did not hold true in most cases. Twitter does not provide enough detailed data to predict a winning candidate. You are encouraged to explore the plots more and make your own arguments! In the next story, we will examine retweets hour by hour.
+                    </p>
+                    </br>
+                    </br>
                     </p>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <br />
                 <br />
                 <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;margin: auto'><noscript><a href='#'><img alt='Retweets Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hy&#47;hyp1Final&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='hyp1Final&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hy&#47;hyp1Final&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showTabs' value='y' /></object></div>
@@ -214,13 +219,13 @@
                         Looking at the first slide, 'Cruz', we can see all of the tweets throughout the day. By moving your mouse over the data, you are able to see the specific content of the tweets. The most noticable tweets occur in the bottom right which we will examine on the next slide.
                         </br>
                         </br>
-                        Looking at the second slide, 'Cruz Winning!', we see the highlighted tweets represent the "thank you STATE" tweets. Cruz's most popular tweets that day were related to his victories. These tweets were towards the end of the day as the results would be released.
+                        Looking at the second slide, 'Cruz Winning!', we see the highlighted tweets represent the "thank you STATE" tweets. Cruz's most popular tweets that day were related to his victories. This supports the hypthesis. These tweets were towards the end of the day as the results would be released.
                         </br>
                         </br>
-                        Looking at the third slide, 'Kasich', his tweets seem to be popular at random times. There is no repeated spikes in retweets since he did not win any states this super tuesday.
+                        Looking at the third slide, 'Kasich', his tweets seem to be popular at random times. There is no repeated spikes in retweets since he did not win any states this Super Tuesday.
                         </br>
                         </br>
-                        Looking at the fourth slide, 'Rubio', we see two tweets stand out.
+                        Looking at the fourth slide, 'Rubio', we see two tweets stand out. If these tweets relate to winning a state, this would support the hypothesis, otherwise it would oppose.
                         </br>
                         </br>
                         Looking at the fifth slide, 'Rubio Winning!', one of those two tweets relates to winning as we would expect. The other tweet is simply encouring people to vote. The surprise popularity of this tweet does not follow the hypothesized trend.
@@ -229,7 +234,7 @@
                         Looking at the sixth slide, 'Sanders', we see one very popular tweet near the center. The tweet is a retweet from another very popular twitter user, Neil deGrasse Tyson. I would consider this tweet an outlier.
                         </br>
                         </br>
-                        Looking at the seventh slide, 'Sanders Winning!', we can see he won several states. Due to the outlier retweet being very popular, it was difficult to conclude the winning tweets.
+                        Looking at the seventh slide, 'Sanders Winning!', we can see he won several states. Due to the outlier retweet being very popular, it was difficult to immediately conclude the winning tweets.
                         </br>
                         </br>
                         Looking at the eighth slide, 'Trump', we can see the content of most of Trumps tweets are only about Thank you's for winning. He did not tweet as much as the other candidates. The most retweeted tweet was his popular slogan, MAKE AMERICA GREAT AGAIN.
@@ -244,9 +249,14 @@
                         Looking at the eleventh slide, 'Clinton Winning!', supporting the hypothesis, Clinton's most popular tweets resonated with her winnings.
                         </br>
                         </br>
-                        Looking at the last slide, 'All', we can see all of the tweets ploted at once. We can immediately notice the difference in popularity between the candidates. Despite Hillary having more than double the followers of Sanders, he was more often retweeted. Overall, this analysis shows the winning candidate is not always the most popular on twitter. The reader is encouraged to explore the data to find their own conclusions!
+                        Looking at the last slide, 'All', we can see all of the tweets ploted at once. We can immediately notice the difference in popularity between the candidates. Despite Hillary having more than double the followers of Sanders, he was more often retweeted. An explanation may be that Clinton was popular on twitter before the presidential race. She have been an important figure for many years. Many of her followers may not actively follow her political campaign.
                         </br>
                         </br>
+                    <p class="text-danger" align="justify">
+                        Again, overall the first hypothesis was not successful so I would reject it. Some of the candidates most popular tweets related to winning a state but this did not always hold true. There seems to be a need for more insightful data than Twitter can provide. You are encouraged to explore the plots more and make your own arguments!
+                    </p>
+                    </br>
+                    </br>
                     </p>
                 </div>
             </div>
@@ -258,12 +268,14 @@
             <div class="row" align="center">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">2nd Hypothesis</h2>
-                    <h3 class="section-subheading text-muted">I hypothesize following of each candidate will display clear, distinct characteristics. </h3>
+                    <h3 class="section-subheading">I hypothesize following of each candidate will display clear, distinct characteristics. </h3>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-lg-12 text-center">
-                    To support this second hypothesis, I examined the following relationships between candidates, and some popular new sources. For example, I randomly selected a subset of users that all followed Trump. For each of these users, I checked whether they followed the other five candidates, CNBC, CNN, FoxNews, HuffingtonPost, and NYTimes.
+                    <p align="justify">
+                        To support this second hypothesis, I examined the following relationships between candidates, and some popular news sources. I randomly selected a subset of users that all followed Trump. For each of these users, I checked whether they followed the other five candidates, CNBC, CNN, FoxNews, HuffingtonPost, and NYTimes. I would expect some candidates followings to be heavily involved in all new sources and all politicians, while other folllowers would only follow their favorite candidate and single news source.
+                    </p>
                 </div>
             </div>
             <div class="row ">
@@ -276,24 +288,26 @@
             <div class="row ">
                 <div class="col-lg-12 text-center">
                     <p align="justify">
-                        Looking at the first slide, 'Between Candidates', we see a matrix heat map of the number followers from the row candidate, to the column candidate. For example, the first row Clinton, third column Kasich, shows a light color, meaning Clinton follows do not often follow Kasich. Looking at the picture overall, we can see some distinct differences between each candidate. Lets look closely at Trump...
+                        Looking at the first slide, 'Between Candidates', we see a matrix heat map of the number followers from the row candidate, to the column candidate. For example, the first row Clinton, third column Kasich, shows a light color, meaning Clinton follows do not often follow Kasich. Looking at the picture overall, we can see some distinct differences between each candidate. Lets look closer at Trump in the next slide.
                         </br>
                         </br>
-                        Looking at the second slide, 'Little multiple follows for Trump', we can see that Trump followers seem to only follow Trump and not the other candidates. From this I would suggest Trump followers are less likely to be super involved in politics and follow all other candidates. Lets look at a different example of Kasich next...
+                        Looking at the second slide, 'Little multiple follows for Trump', we see that Trump followers seem to only follow Trump and not the other candidates. From this I would suggest Trump followers are less likely to be super involved in politics and follow all other candidates. This supports the hypothesis.
                         </br>
                         </br>
-                        Looking at the third slide, 'Many multiple follows for Kasich', we can see that Kasich followers seem to follow all of the candidates. I would conclude Kasich followers are more engaged in politics generally keep up with all candidates. Now lets switch over to news agencies...
+                        Looking at the third slide, 'Many multiple follows for Kasich', Kasich followers seem to follow all of the candidates. I would conclude Kasich followers are more engaged in politics generally keep up with all candidates.
                         </br>
                         </br>
                         Looking at the fourth slide, 'News Sources', we can see how many followers of each candidate followed news sources. We can see certain candidates seem to be popular with certain new agencies. For example we can see Trump followers like CNN, FoxNews, and NYTimes.
                         </br>
                         </br>
-                        Looking at the fifth slide, 'Kasich Followers', Kasich followers again seem to follow the widest range of political sources.
+                        Looking at the fifth slide, 'Kasich Followers', Kasich followers again seem to follow the widest range of political sources. This matched are our ealier conclusion that Kasich followers are more involved in politics.
                         </br>
                         </br>
-                        In conclusion, this hypothesis held true. The different followers of each candidate had some clear differences in characteristics. This relates to the broad question of learning more about the candiates soley from Twitter.
-                        </br>
-                        </br>
+                    <p class="text-success" align="justify">
+                        In conclusion, this hypothesis held true. The different followers of each candidate had some clear differences in characteristics. This relates back to the broad question of learning more about the candidates soley from Twitter.
+                    </p>
+                    </br>
+                    </br>
                     </p>
                 </div>
             </div>
@@ -305,12 +319,14 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">3rd Hypothesis</h2>
-                    <h3 class="section-subheading text-muted">Slogans and mentions of the winning candidate will be most apparent in searches of all tweets following political related subjects</h3>
+                    <h3 class="section-subheading">Slogans and mentions of the winning candidate will be most apparent in searches of all tweets following political related subjects.</h3>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-lg-12 text-center">
-                    This third hypothesis will be examined through word clouds. Word clouds are visuals where the size of the word corresponds to the number of occurances of the word. To collect data, I searched for tweets containing keywords such as "DonaldTrump", or "SuperTuesday." I then using the natural language processing toolkit from python to tokenize and gather the word counts of the text of all found tweets. In the next analysis, the title of each slide corresponds to the search keyword.
+                    <p align="justify">
+                        This third hypothesis will be examined through word clouds. Word clouds are visuals where the size and color of the word corresponds to the number of occurances of the word. To collect data, I searched for tweets containing keywords such as "DonaldTrump", or "SuperTuesday." I used the <a href="http://www.nltk.org/">natural language processing toolkit</a> from python to tokenize and gather the word counts of the text of all found tweets. In the next analysis, the title of each slide corresponds to the search keyword. It is important to note the data collection for these tweets was mid march, several weeks after Super Tuesday. The subjects within the clouds match the current events around that time.
+                    </p>
                 </div>
             </div>
             <div class="row ">
@@ -323,22 +339,22 @@
             <div class="row ">
                 <div class="col-lg-12 text-center" align="center">
                     <p align="justify">
-                        Looking at the first slide, 'Bernie Sanders', we immediately see some interesting results. Michigan appears to be the second most popular word. This is due to the Michigan primary occurring at the time I collected this data. We can also see the name, shailenewoodly, a popular twitter user endorsing Bernie. In the remainder of word clouds, we expect to see similar results...
+                        Looking at the first slide, 'Bernie Sanders', we immediately see some interesting results. Michigan appears to be the second most popular word. This is due to the Michigan primary occurring at the time I collected this data. We can also see the name, shailenewoodly, a popular twitter user who openly endorses Bernie. In the remainder of word clouds, we expect to see similar results summarizing current events.
                         </br>
                         </br>
-                        Looking at the second slide, 'HillaryClinton', we can see some similar surprising appearances. FeelTheBern and BernieSanders are popular phrases. This could be due to the democratic debate at DemTownHall that was again occuring at a similar time. We can also see that Michigan made an appearance as a discussed state.
+                        Looking at the second slide, 'HillaryClinton', we can see some surprising appearances. FeelTheBern and BernieSanders are popular phrases. This could be due to the democratic debate at DemTownHall that was again occuring at a similar time. We can also see that Michigan again made an appearance as a discussed state.
                         </br>
                         </br>
-                        Looking at the third, fourth, fifth, and sixth slide, I leave it to the reader to explore similar investigations. Some interesting conclusions may be drawn.
+                        Looking at the third, fourth, fifth, and sixth slide on the Republicans, I leave it to the reader to explore similar investigations. Some interesting conclusions may be drawn.
                         </br>
                         </br>
-                        Looking at the seventh slide, 'SuperTuesday', we can see Trump is again popular in twitter conversations. BernieSanders and HillaryClinton are close behind. Despite Hillary being a larger winner, Sanders was more talked about on Super Tuesday.
+                        Looking at the seventh slide, 'SuperTuesday', Trump is again popular in twitter conversations. BernieSanders and HillaryClinton are close behind. Despite Hillary being a larger winner, Sanders is more discussed on Twitter.
                         </br>
                         </br>
-                        Looking at the eighth slide, 'Arkansas Primary', the most prominant words seem to be related to Trump. We see two words "endorses" and "wesleyrickard." Upon investigation, I found wesleyrickard, a popular twitter user is vocal about his endorsement of Trump. These prominant words are supporting the hypothesis a useful summary of current events can be found within these word clouds.
+                        Looking at the eighth slide, 'Arkansas Primary', the most prominant words seem to be related to Trump. We see two words "endorses" and "wesleyrickard." Upon investigation, I found wesleyrickard, a popular twitter user is vocal about his endorsement of Trump. These prominant words are supporting the hypothesis that a useful summary of current events can be found within these word clouds.
                         </br>
                         </br>
-                        Looking at the ninth slide, 'Primary', we find similar subjects to the previous slide on arkansas. Some political states having there primary around the time of data collection can be seen, NC, NY, and CA.
+                        Looking at the ninth slide, 'Primary', similar subjects to the previous slide are found. Some political states having a primary around the time of data collection can be seen such NC, NY, and CA.
                         </br>
                         </br>
                         Looking at the tenth slide, 'AntiTrump', this slogan shows how a group has rallied against Trump and also again Rubio by the "neverrubio." This group appears to support Cruz through the "unitewithcruz" phrase.
@@ -347,9 +363,11 @@
                         Looking at the eleventh slide, 'FeelTheBern', the last slogan we will examine shows the current event, the democratic debate. Some of the subjects of the debate can be seen such as fracking and climate.
                         </br>
                         </br>
+                    <p class="text-success" align="justify">
                         In conclusion, the word clouds showed excellent results. We are able to learn a quick summary of current events surrounding each keyword.
-                        </br>
-                        </br>
+                    </p>
+                    </br>
+                    </br>
                     </p>
                 </div>
             </div>
@@ -361,7 +379,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Conclusion</h2>
-                    <p align="center">In summary, the first hypothesis showed okay results, while the second and third hypothesis seemed to hold true. We can attempt to predict the winner from twitter popularity, but this does not always hold true. Despite this failure, we can still learn a significant amount about each candidate through their follows and discussions around them. I can confidently conclude Twitter is excellent at crowdsourcing general data, but trying to understand specific results can be difficult.</p>
+                    <p align="justify">The first hypothesis showed okay to bad results, while the second and third hypothesis held true. We can attempt to predict the winner from twitter popularity, but not enough data is available on Twitter. Despite this failure on one hypothesis, we can still gain knowledge amount about each candidate through their followers and discussions around them. I can confidently conclude Twitter is a useful resource at crowdsourcing general data, but trying to understand specific results can be difficult.</p>
                 </div>
             </div>
         </div>
@@ -380,13 +398,13 @@
                     StartBootstrap <a href="http://startbootstrap.com/template-categories/full-websites/">http://startbootstrap.com/template-categories/full-websites/</a>
                     <br />
                     <br />
-                    StartBootstap provides complete templates to begin webdevelopment. The template used for this website is found here http://startbootstrap.com/template-overviews/agency/. I chose this template for the clean one-long page format with easy navigation bar along the top of the page. There are many more great, free to use templates available from this resource.
+                    StartBootstap provides complete templates to begin webdevelopment. The template used for this website is found here <a href="http://startbootstrap.com/template-overviews/agency/">http://startbootstrap.com/template-overviews/agency/</a>. I chose this template for the clean one-long page format with easy navigation bar along the top of the page. There are many more great, free to use templates available from this resource.
                     <br />
                     <br />
                     Tableau Public <a href="https://public.tableau.com/s/">https://public.tableau.com/s/</a>
                     <br />
                     <br />
-                    Tableau allows for very easy embedding of graphs into a webpage. The original graph is hosted by Tableau.com and linked. The graph is created using intuitive GUIs in a dashboard. I highly recommend Tableau for all quick and comprehensive data analysis tasks.
+                    Tableau allows for very easy embedding of graphs into a webpage. The original graph is hosted by Tableau.com. The graph is created using intuitive GUIs in a dashboard. I highly recommend Tableau for all quick and comprehensive data analysis tasks.
                 </p>
             </div>
         </div>
@@ -398,12 +416,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Jace Robinson</h3>
+                    <h3 class="section-subheading"><a href="https://science-math.wright.edu/connect/profile/jace-robinson">Jace Robinson</a></h3>
                 </div>
             </div>
             <div class="row text-center">
                 <p align="justify">
-                    Jace Robinson is an undergraduate at Wright State University. He will be pursuing his masters of science in computer science starting Summer 2016 at Wright State.
+                    I am an undergraduate at Wright State University. I will be pursuing his masters of science in computer science starting Summer 2016 at Wright State. My current interests lie in any and all technical programming problems involving mathematics and statistics.
                 </p>
             </div>
         </div>
@@ -414,7 +432,7 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>Wright State University</li>
-                        <li>CS 3250 Computational Tools and Methods for Analysis</li>
+                        <li>CS 3250 Computational Tools and Methods for Data Analysis</li>
                         <li>Spring 2016</li>
                         <li><a href="https://github.com/JaceRobinson8/jacerobinson8.github.io">Githubpage</a></li>
                     </ul>
