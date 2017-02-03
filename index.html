@@ -11,15 +11,17 @@
 <body>
     <div id="main">
         <div id="top">
-            <img src="img/personal-photo2.jpg" alt="Me" style="float:left; width:25%" />
+            <img src="img/personal-photo2.jpg" alt="Jace" style="float:left; width:25%" />
+			<!-- <img src="img/personal-photo1.jpg" alt="Me" style="float:right; width:25%" /> -->
             <div class="grouper" style="float:left; padding-left: 30px;">
                 <div id="top-name">Jace Robinson</div>
                 <div id="top-info">
                     Email: robinson.329@wright.edu
                     <br />
-                    Location: Dayton, Ohio, Wright State University, 
-							  Russ Engineering Center, Rm. 357
-							  Web and Complex Systems Lab
+                    <ul style="list-style-type:none; padding:0">Location: <li>Wright State University,</li>
+							  <li>Dayton, Ohio,</li>
+							  <li><a href="http://knoesis.org/"> Kno.e.sis Research Center</a></li>
+							  <li><a href="http://knoesis.org/sites/default/files/people/derek/wacs/">Web and Complex Systems Lab</a></li></ul>
                     <br /> 
                     Resume: <a href="files/jrobinson-resume-feb-2016.pdf">[pdf]</a>
 					<br /> 
@@ -41,17 +43,10 @@
         <div class="entry">
             <div class="entry-title">BIO</div>
             <div class="grouper">
-                I am currently a masters researcher in the
-                <a href="https://engineering-computer-science.wright.edu/computer-science-and-engineering">computer science department</a>
-                at <a href="https://www.wright.edu/">Wright State</a>, working
-                under the supervision of <a href="http://knoesis.org/people/derek/">
-                Dr. Derek Doran</a>. My current research focuses TODO.
-                Previously, I was a research associate at the Air Force Institute of Technology at Wright Patterson Air Force Base under the supervision of Dr. Andrew Terzuoli.
-				I have complete a double B.S. of Mathematics and Computer Science. During my undergraduate I worked with Dr. Arasu
-                In general, my research interests are TODO...
+                I am currently a graduate researcher in the <a href="http://knoesis.org/sites/default/files/people/derek/wacs/">Web and Complex Systems Lab</a> and <a href="http://knoesis.org/"> Kno.e.sis Research Center</a> in the <a href="https://engineering-computer-science.wright.edu/computer-science-and-engineering">computer science department</a> at <a href="https://www.wright.edu/">Wright State University</a>, working towards a Master's of Science in Computer Science under the advisement of <a href="http://knoesis.org/people/derek/">Dr. Derek Doran</a>. My current research interests are in using probabilistic techniques to develop new dynamic network models. Specifically I really like the idea of directed graphical models to define Bayesian generative models for a wide range of applied problems. I intend to pursue a Ph.D following the completion of my M.S.
+				<br /> <br />
 				
-				<a href="http://knoesis.org/sites/default/files/people/derek/wacs/">Web and Complex Systems Lab</a>
-				<a href="http://knoesis.org/"> Kno.e.sis </a>
+				Previously I was a federal contractor at the <a href="https://www.afit.edu/">Air Force Institute of Technology</a> at <a href="http://www.wpafb.af.mil/">Wright Patterson Air Force Base</a> for a year under the supervision of <a href="https://www.afit.edu/BIOS/bio.cfm?facID=224">Dr. Andrew Terzuoli</a> working on a wide range of topics such as parallel programming using CUDA for accelerated algorithms, nonlinear optimization for passive tracking with visualization of confidence bounds, and modeling digital traffic behavior for improved product delivery. During my undergraduate I was a research assistant for two years with <a href="http://people.wright.edu/k.arasu">Dr. K.T. Arasu</a> studying in the field of algebraic combinatorics, specifically discovering and identifying properties of <i>Difference Sets</i>. I was also a teaching assistant for a few undergraduate mathematics and computer science courses of Calculus I-II, Discrete Mathematics, and College Algebra.
 				
             </div>
         </div>
@@ -63,68 +58,51 @@
             <div class="grouper">
                 <div class="research-entry">
                     <img class="research-img" alt="Dynamic Network Modeling"
-                         src="img/CDSBM2Example_30-2.gif" />
+                         src="img/sdsbm-visual.gif" />
                     <div class="research-content">
                         <div class="research-title">
                             Dynamic Network Modeling *current project
                         </div>
                         <div class="grouper">
-							TODO
+						For this project we are developing a novel random network model which combines the tools of <i>Stochastic Block Models</i> with <i>State Space Models</i> in order to capture the <i>Seasonal Dynamics</i> of a large networks. An applied example is in the context of a geospatial network. Daily foot and vehicle traffic densities in a city fluctuate in predictable ways throughout the day. We can create a model of these predictable seasonal patterns and use them to define typical behavior for a geospace. Once a model for typical is created, it allows us to automatically detect when something atypical occurs within the geospace, which is often a more valuable question.
 						
-                           We develop a method to fit a 3D volumetric model of the human
-                           body to pixel-level body part labels obtained via a fully convolutional
-                           neural network trained on the Human80K dataset, which provides pixel-level
-                           annotations. We represent a human body as 3D cylinders, and use priors to
-                           constrain the size and orientation of the body parts, as well as to enforce
-                           non-intersection. We then use a graphics engine (e.g., OpenGL) to efficiently
-                           render the model onto the image plane -- using a camera model, which we also
-                           estimate -- resulting in pixel-level part labels. 
+						<br /><br />
 						   
-						   In progress...
+						   We expect to produce multiple publications on this work within the next few months.
                         </div>
                     </div>
                 </div>
                 <br />
                 <div class="research-entry">
                     <img class="research-img" alt="Parallel Iterative Closest Point"
-                         src="img/pICP_Convergence_Example.png" />
+                         src="img/pICP_Convergence_Example2.png" />
                     <div class="research-content">
                         <div class="research-title">
                             Iterative Closest Point for Automated Aerial Refueling
                         </div>
                         <div class="grouper">
-                            Imagine having two videos
-                            known to contain similar content (e.g., sports) and wanting to extract clips
-                            in which both videos feature the same semantic action (e.g., a golf swing).
-                            In this research, we approach this problem as a linear integral optimization
-                            problem, and use the primal-dual method to solve it.
+                            The Iterative Closest Point algorithm is a widely used approach to aligning the geometry between two 3 dimensional objects. The capability of aligning two geometries in real time on low-cost hardware will enable the creation of new applications in Computer Vision and Graphics such as automated aerial refuelng between a tanker and jet. This work presents an accelerated alignment variant which utilizes parallelization on a Graphics Processing Unit (GPU) of multiple kNN approaches augmented with a novel Delaunay Traversal to achieve real time estimates.
 							
-							This work resulted in two conference publications below...
+							<br /><br />
+							
+							This work resulted in two conference publications.
                         </div>
                     </div>
                 </div>
                 <br />
                 <div class="research-entry">
                     <img class="research-img" alt="Nonlinear Optimization"
-                         src="img/nlo-visual.png" />
+                         src="img/nlo-visual3.png" />
                     <div class="research-content">
                         <div class="research-title">
-                            Nonlinear Optimization with Confidence Visualization
+                            Nonlinear Optimization with Confidence Visualization for Tracking Passive Objects
                         </div>
                         <div class="grouper">
-                            Human activity recognition comprises a range of open challenges and is a very
-                            active research area,
-                            spanning topics from visual recognition of individual behavior,
-                            pairwise interactions among individuals participating in different
-                            roles in a joint activity, coordinated sequences
-                            of actions as expressions of planned activity, and multiple
-                            groups of individuals interacting across broad time scales.  In this research, we
-                            address the last of these, presenting a framework for automatically
-                            constructing an interpretation of high-level human activity structure as
-                            observed in surveillance video, across multiple, interleaved instances of
-                            activities. 
+							Angle of Arrival (AOA) measurements can be created from any sensor platform with any sort of optical sensor, location and attitude knowledge to track passive objects. Previous work has created a non-linear optimization (NLO) method for calculating the most likely estimate from AOA measurements. Two new modifications to the NLO algorithm are created and shown to correct AOA measurement errors by estimating the inherent bias and time-drift in the Inertial Measurement Unit (IMU) of the AOA sensing platform.
 							
-							This work resulted in publication below...
+							<br /><br />
+							
+							This work resulted in a conference publication.
                         </div>
                     </div>
                 </div>
@@ -137,53 +115,51 @@
             <div class="entry-title">PUBLICATIONS</div>
             <div class="grouper">
                 <div class="grouper">
-                    Robinson J., Piekenbrock M., Burchett L., Nykl S., Woolley B., Terzuoli A. (2016) Parallelized Iterative Closest Point for Autonomous Aerial Refueling. In: Bebis G. et al. (eds) Advances in Visual Computing. ISVC 2016. Lecture Notes in Computer Science, vol 10072. Springer, Cham
+                    <b>Robinson J.</b>, Piekenbrock M., Burchett L., Nykl S., Woolley B., Terzuoli A. (2016) Parallelized Iterative Closest Point for Autonomous Aerial Refueling. In: Bebis G. et al. (eds) Advances in Visual Computing. ISVC 2016. Lecture Notes in Computer Science, vol 10072. Springer, Cham
 					<a href=http://link.springer.com/chapter/10.1007/978-3-319-50835-1_53>
                     [Link]</a>
 				</div>
 				<br ./>
 				<div class="grouper">
-                    L. Burchett, J. Robinson, M. Piekenbrock, S. Nykl, B.Woolley, and A. Terzuoli, “Automated aerial refueling: Parallelized 3d iterative closest point,” in IEEE NAECON, 2016, pp. 1–5
+                    L. Burchett, <b>J. Robinson</b>, M. Piekenbrock, S. Nykl, B.Woolley, and A. Terzuoli, “Automated aerial refueling: Parallelized 3d iterative closest point,” in IEEE NAECON, 2016, pp. 1–5
 				</div>
                 <br />
                 <div class="grouper">
-					Levy D., Roos J., Robinson J., Carpenter W., Martin R., Taylor, C., Sugrue J., Terzuoli A. (2016) NON LINEAR OPTIMIZATION APPLIED TO ANGLE-OF-ARRIVAL SATELLITE BASED GEO-LOCALIZATION FOR BIASED AND TIME-DRIFTING SENSORS. In International Archives of the Photogrammetry, Remote Sensing \& Spatial Information Sciences, vol 41.
-					<a href="https://www.researchgate.net/publication/307529585_NON_LINEAR_OPTIMIZATION_APPLIED_TO_ANGLE-OF-ARRIVAL_SATELLITE_BASED_GEO-LOCALIZATION_FOR_BIASED_AND_TIME-DRIFTING_SENSORS">
+					Levy D., Roos J., <b>Robinson J.</b>, Carpenter W., Martin R., Taylor, C., Sugrue J., Terzuoli A. (2016) NON LINEAR OPTIMIZATION APPLIED TO ANGLE-OF-ARRIVAL SATELLITE BASED GEO-LOCALIZATION FOR BIASED AND TIME-DRIFTING SENSORS. In International Archives of the Photogrammetry, Remote Sensing \& Spatial Information Sciences, vol 41.
+					<a href="http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLI-B2/319/2016/">
                     [Link]</a>
                 </div>
                 <br />
             </div>
         </div>
 
-        <br /><br /><br />
+<!--         <br /><br /><br />
 
         <div class="entry">
             <div class="entry-title">CODE</div>
             <div class="grouper">
                 <div class="grouper">
-                    <a href=
-                    "http://kobus.ca/research/programs/CVPR_11_pollen/index.html">
-                    Tracking smooth trajectories</a> - C++ code and UNIX
-                    binaries used in this work. The
-                    <a href=
-                    "http://kobus.ca/research/data/CVPR_11_pollen/index.html">
-                    data</a> used in the paper is also available.
+
                 </div>
                 <br />
                 <div class="grouper">
-                    <a href="https://github.com/ksimek/libergo">libergo</a> -
-                    C++ library for MCMC sampling; developed with
-                    <a href="http://vision.sista.arizona.edu/ksimek">Kyle
-                    Simek</a>.
+
                 </div>
             </div>
-        </div>
+        </div> -->
+		
+<!-- 		<br /><br /><br />
+		
+		<div class="entry">
+            <div class="entry-title">Reading, Blog, and Podcast List</div>
+			Weapons of Math destruction, Elon Musk, ...
+
+        </div> -->
         <br />
 
          <div id="bottom">
+            &copy; Jace Robinson &nbsp;
          </div>
-            &copy; Jace Robinson &nbsp; | &nbsp;
-		 </div>
 </body>
 </html>
 
