@@ -123,6 +123,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', end
     overflow: hidden;
 }
 
+.research-full-col {
+    width: 100%;
+}
+
 .research-img {
     width: 30%;
     float:left;
